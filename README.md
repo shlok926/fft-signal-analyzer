@@ -7,11 +7,11 @@
 ```
 ╔═══════════════════════════════════════════════════════════════════════╗
 ║                                                                       ║
-║        ⚡ PROFESSIONAL FFT ANALYSIS TOOL ⚡                          ║
+║           ⚡ PROFESSIONAL FFT ANALYSIS TOOL ⚡                        ║
 ║                                                                       ║
-║     For Engineers • Researchers • Data Scientists • Students         ║
+║          For Engineers • Researchers • Data Scientists              ║
 ║                                                                       ║
-║                    🎯 Production Ready · 100% Open Source           ║
+║              🎯 Production Ready · 100% Open Source                 ║
 ║                                                                       ║
 ╚═══════════════════════════════════════════════════════════════════════╝
 ```
