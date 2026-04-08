@@ -401,8 +401,8 @@ If you use this project in research, please cite:
 For issues, questions, or suggestions:
 - 📝 Open an issue on GitHub
 - 💬 Discussions/Q&A on GitHub
-- 📧 Email: your.email@example.com
+- 📧 Email: shlok.thorat.cyb@ghrcem.raisoni.net
 
 ---
 
-**Made with ❤️ for signal processing enthusiasts**
+**Made with Shlok for signal processing enthusiasts**
