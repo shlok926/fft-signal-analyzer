@@ -1,220 +1,342 @@
-# FFT Signal Analyzer
+# 📡 FFT Signal Analyzer
 
-A comprehensive Desktop/Web application for Fast Fourier Transform (FFT)-based signal analysis, frequency component extraction, and signal processing.
+> **Real-Time Signal Processing & Frequency Domain Analysis**
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Python](https://img.shields.io/badge/python-3.11+-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║   Professional FFT Analysis Tool for Engineers & Researchers    ║
+║                                                                  ║
+║   • Interactive Dashboard • Real-time Analysis • AI Features    ║
+║   • Multiple Export Formats • Peak Detection • Signal Filtering  ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+```
 
-## Overview
+---
 
-The **FFT Signal Analyzer** is a Python-based tool designed for:
-- **Signal Generation**: Create synthetic signals with configurable frequency components and noise
-- **Spectral Analysis**: Compute FFT with various windowing functions and zero-padding
-- **Noise Filtering**: Apply low-pass, high-pass, band-pass, and notch filters
-- **Peak Detection**: Automatically identify dominant frequency components
-- **Interactive Visualization**: Explore time-domain, frequency-domain, phase, and power spectral density plots
-- **Export**: Save results to CSV, PNG/SVG plots, and PDF reports
+## 🎯 What is FFT Signal Analyzer?
 
-### Target Users
-- RF Engineers & Signal Processing Researchers
-- DSP Students & Educators
-- Embedded Systems Developers
-- Anyone working with frequency analysis
+A **production-ready, AI-enhanced signal processing application** for frequency domain analysis, spectral examination, and intelligent signal classification.
 
-## Features
+**Perfect for:**
+- 🔬 Signal Processing Research
+- 📊 Audio & Vibration Analysis  
+- 🎵 Acoustic Engineering
+- 📡 Telecommunications
+- 🤖 AI/ML Feature Extraction
+- 👨‍🎓 Educational Learning
 
-✨ **Core Features**
-- ✅ Composite signal generation (multiple sinusoids + noise)
-- ✅ FFT computation with Hann/Hamming/Blackman/Rectangle windows
-- ✅ Zero-padding for improved frequency resolution
-- ✅ Butterworth filters (LP/HP/BP/Notch) with zero-phase response
-- ✅ Automatic peak detection with prominence thresholds
-- ✅ Harmonic series analysis & THD calculation
+---
+
+## ✨ Key Features
+
+### 🎚️ Signal Processing
+| Feature | Capability |
+|---------|-----------|
+| **Signal Generation** | Composite signals with multiple frequencies + configurable noise |
+| **FFT Computation** | 6 window functions (Hann, Hamming, Blackman, Kaiser, Rectangle, Bartlett) |
+| **Digital Filtering** | Low-pass, High-pass, Band-pass, Notch (Butterworth, zero-phase) |
+| **Peak Detection** | Automatic detection with prominence thresholds |
+
+### 📈 Visualization & Analysis
+- ✅ Time-domain waveform display
+- ✅ Frequency spectrum (magnitude, magnitude-dB, phase)
+- ✅ Power Spectral Density (PSD)
+- ✅ Time-Frequency Spectrogram
+- ✅ Statistical analysis (mean, RMS, peak, skewness, kurtosis)
 - ✅ Interactive Plotly dashboard
-- ✅ Command-line interface (CLI)
-- ✅ CSV/WAV/NPY file import
-- ✅ Export to PNG/SVG/PDF/CSV
 
-📊 **Visualization**
-- Time-domain amplitude plot
-- Frequency spectrum (dB & linear scales)
-- Phase spectrum (wrapped & unwrapped)
-- Power Spectral Density (Welch method)
-- Detected peaks with annotations
-- Before/after filter comparison plots
+### 🤖 AI-Powered Features
+- **🗜️ Data Compression** - Frequency-based spectrum compression with energy preservation
+- **🚨 Anomaly Detection** - Isolation Forest-based frequency anomaly detection
+- **🧠 Signal Classification** - Neural network classification (Normal, Periodic, Transient, Chaotic, Noisy)
 
-## Installation
+### 💾 Export & Integration
+- ✅ Excel export with multiple sheets (Spectrum, Peaks)
+- ✅ CSV data export
+- ✅ WAV/NPY file import
+- ✅ Batch processing capability
+
+---
+
+## 🛠️ Technology Stack
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  BACKEND          │  FRONTEND      │  ANALYSIS         │
+│  ─────────────    │  ──────────    │  ────────────     │
+│  Python 3.11+    │  Streamlit     │  NumPy            │
+│  SciPy           │  Plotly        │  SciPy            │
+│  NumPy           │  HTML/CSS      │  Scikit-learn     │
+│  Pandas          │                │  TensorFlow/Keras │
+└─────────────────────────────────────────────────────────┘
+```
+
+### Dependencies
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red?logo=streamlit&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Latest-013243?logo=numpy&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive-3F4F75?logo=plotly&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen)
+
+---
+
+## 🚀 Quick Start
+
+### ⚡ Fastest Way (Recommended)
+
+**Option 1: Desktop Shortcut**
+```bash
+Double-click: "FFT Spectrum Analyzer" shortcut on desktop
+```
+
+**Option 2: Batch Launcher**
+```bash
+c:\Users\Shlok\fft_signal_analyzer\FFT_Spectrum_Analyzer.bat
+```
+
+**Option 3: Command Line**
+```bash
+cd c:\Users\Shlok\fft_signal_analyzer
+streamlit run streamlit_app.py
+```
+
+✨ **First Launch Magic:**
+- ✅ Dependencies auto-check & install
+- ✅ Streamlit server starts automatically
+- ✅ Browser opens at `http://localhost:8501`
+- ✅ Ready to analyze signals!
+
+---
+
+## 📖 Installation
 
 ### Prerequisites
-- Python 3.11 or higher
-- pip or Poetry
+- **Python 3.11+** (Download from [python.org](https://www.python.org))
+- **pip** (comes with Python)
+- **2GB RAM** minimum
+- **Modern web browser**
 
-### Quick Start (with Poetry)
-
+### Step 1: Clone Repository
 ```bash
-# Clone repository
-git clone https://github.com/yourusername/fft-signal-analyzer.git
+git clone https://github.com/shlok926/fft-signal-analyzer.git
 cd fft-signal-analyzer
-
-# Install all dependencies
-make dev-setup
-
-# Run dashboard
-make run
 ```
 
-### Manual Installation
-
+### Step 2: Install Dependencies
 ```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Run dashboard
-python -m fft_analyzer.ui.app
 ```
 
-## Usage
-
-### 1. Interactive Dashboard
-
-Launch the web-based dashboard:
-
+### Step 3: Run Application
 ```bash
-make run
-# or
-poetry run fft-dashboard
+streamlit run streamlit_app.py
 ```
 
-Then open your browser to `http://127.0.0.1:8050`
+✨ That's it! Your browser opens at `http://localhost:8501`
 
-**Dashboard Features:**
-- Configure signal parameters (frequencies, amplitudes, SNR)
-- Select window function and filter type
-- View real-time plots after clicking "Analyze"
-- Inspect detected peaks in a table
-- Export analysis results
+---
 
-### 2. Command-Line Interface
+## 💡 How to Use
 
-Generate and analyze signals:
+### 🎯 Step-by-Step Guide
 
-```bash
-# Generate a test signal
-fft-analyzer generate --freq 50 120 --amp 1.0 0.5 --snr 20 --fs 1000 --duration 1.0 --output signal.csv
+#### 1️⃣ **Generate or Import a Signal**
 
-# Analyze a signal file
-fft-analyzer analyze --input signal.csv --window hann --fs 1000 --output-dir outputs
+**Method A: Generate Test Signal**
+- Set **Frequency 1** & **Frequency 2** (Hz)
+- Set **Amplitude 1** & **Amplitude 2**
+- Add **Noise** (SNR dB slider)
+- Set **Sampling Rate** (Hz)
+- Set **Duration** (seconds)
 
-# Create interactive plot
-fft-analyzer plot --input outputs/spectrum.csv --output output/plot.html
+**Method B: Import Your Data**
+- Click **"📁 Import File"** tab
+- Upload `.csv`, `.wav`, or `.npy` file
+- Specify sampling rate if needed
 
-# Launch dashboard
-fft-analyzer dashboard --port 8050 --debug
+#### 2️⃣ **Configure Analysis**
+
+- Choose **Window Function**: Hann (default), Hamming, Blackman, Kaiser, etc.
+- **Optional Filters**: Low-pass, High-pass, Band-pass, Notch
+- Set **Filter Cutoff Frequency**
+
+#### 3️⃣ **Click ANALYZE**
+
+```
+Input Signal → FFT → Peak Detection → Results
+     ↓          ↓         ↓            ↓
+   1000 pts    1000 freqs 20 peaks   4 plots
 ```
 
-### 3. Python API
+#### 4️⃣ **Explore Results**
 
-Use as a library:
+- 📈 **Time-Domain Plot** - Raw signal waveform
+- 📊 **Frequency Spectrum** - Magnitude at each frequency
+- 🔄 **Phase Spectrum** - Phase angles
+- ⚡ **Power Spectral Density** - Energy distribution
 
-```python
-from fft_analyzer import SignalGenerator, FFTEngine, PeakDetector, Visualizer
+#### 5️⃣ **Use AI Features**
 
-# Generate signal
-signal = SignalGenerator.generate_signal(
-    components=[
-        {"frequency": 50, "amplitude": 1.0, "phase": 0},
-        {"frequency": 120, "amplitude": 0.5, "phase": 0},
-    ],
-    fs=1000,
-    duration=1.0,
-    snr_db=20,
-    label="My Signal",
-)
+| Feature | Use Case |
+|---------|----------|
+| 🗜️ **Compression** | Reduce data size, keep important frequencies |
+| 🚨 **Anomaly Detection** | Find unusual frequency spikes |
+| 🧠 **Classification** | Identify signal type automatically |
 
-# Compute FFT
-spectrum = FFTEngine.compute_fft(signal, window_type="hann", zero_pad=True)
+#### 6️⃣ **Export Results**
 
-# Detect peaks
-peaks = PeakDetector.detect_peaks(spectrum)
+- ✅ Click **"⬇️ EXPORT"** button
+- 📊 Download **Excel file** with:
+  - Spectrum data (frequency, magnitude, phase, PSD)
+  - Top 20 detected peaks
+- 💾 Ready for further analysis
 
-# Create plots
-fig_freq = Visualizer.plot_frequency_domain(spectrum, peaks)
-fig_phase = Visualizer.plot_phase_spectrum(spectrum)
+---
 
-fig_freq.show()
+## 🎓 Example Use Cases
+
+### 🎵 Audio Engineer
+```
+1. Import audio.wav file
+2. Analyze frequency content
+3. Detect audio artifacts (anomalies)
+4. Export spectrum for report
 ```
 
-## Project Structure
+### 🔧 Mechanical Engineer  
+```
+1. Import vibration data from sensor
+2. Find dominant frequencies
+3. Use anomaly detection for fault detection
+4. Export for maintenance report
+```
+
+### 📊 Data Scientist
+```
+1. Generate test signals
+2. Apply compression (70% reduction)
+3. Extract features for ML
+4. Export for model training
+```
+
+### 👨‍🎓 Student
+```
+1. Generate 50Hz + 120Hz signal
+2. Apply Hann window
+3. View FFT result
+4. Learn frequency analysis
+```
+
+---
+
+## 📂 Project Structure
 
 ```
 fft_signal_analyzer/
-├── src/fft_analyzer/           # Main package
-│   ├── core/                   # DSP algorithms
-│   │   ├── signal_generator.py
-│   │   ├── signal_loader.py
-│   │   ├── fft_engine.py
-│   │   ├── filter_engine.py
-│   │   └── peak_detector.py
-│   ├── models/                 # Data classes
-│   ├── ui/                     # Dash dashboard
-│   ├── visualization/          # Plotly plots
-│   ├── export/                 # CSV/PNG/PDF export
-│   ├── cli/                    # Click CLI
-│   └── utils/                  # Helpers
-├── tests/                      # Unit & integration tests
-├── config/                     # Configuration files
-├── notebooks/                  # Jupyter notebooks
-├── outputs/                    # Results directory (git-ignored)
-├── pyproject.toml             # Poetry dependencies
-├── Makefile                   # Development commands
-└── README.md                  # This file
+│
+├── 📄 streamlit_app.py              ⭐ Main application
+│
+├── src/fft_analyzer/
+│   ├── core/                        🔧 DSP algorithms
+│   │   ├── signal_generator.py      └─ Generate signals
+│   │   ├── fft_engine.py            └─ FFT computation
+│   │   ├── filter_engine.py         └─ Digital filters
+│   │   └── peak_detector.py         └─ Peak detection
+│   │
+│   ├── ai/                          🤖 AI Features
+│   │   ├── compression_engine.py    └─ Data compression
+│   │   ├── anomaly_detector.py      └─ Anomaly detection
+│   │   └── signal_classifier.py     └─ Signal classification
+│   │
+│   ├── visualization/               📊 Plotting & analysis
+│   │   ├── freq_domain_plot.py
+│   │   ├── time_domain_plot.py
+│   │   └── visualizer.py
+│   │
+│   ├── export/                      💾 Export formats
+│   │   ├── csv_exporter.py
+│   │   └── pdf_exporter.py
+│   │
+│   ├── utils/                       🛠️ Helpers
+│   │   ├── logger.py
+│   │   ├── config_manager.py
+│   │   └── validators.py
+│   │
+│   └── models/                      📦 Data classes
+│       ├── signal_data.py
+│       └── spectrum_data.py
+│
+├── config/                          ⚙️ Configuration
+│   └── config.yaml
+│
+├── tests/                           ✅ Unit & integration tests
+│   ├── unit/
+│   └── integration/
+│
+├── requirements.txt                 📋 Dependencies
+├── QUICKSTART.md                    🚀 Quick start guide
+├── FFT_Spectrum_Analyzer.bat        🖱️ Windows launcher
+└── README.md                        📖 This file
 ```
 
-## Development
+---
 
-### Setup Development Environment
+## ❓ FAQ & Troubleshooting
 
+### Q: App won't start?
 ```bash
-make dev-setup
+❌ Error: "Python not found"
+✅ Solution: Install Python 3.11+ from python.org
+
+❌ Error: "Port 8501 already in use"
+✅ Solution: streamlit run streamlit_app.py --server.port 8502
+
+❌ Error: "Missing module streamlit"
+✅ Solution: pip install -r requirements.txt
 ```
 
-This installs all dependencies and sets up pre-commit hooks.
-
-### Running Tests
-
-```bash
-# Run all tests
-make test
-
-# Run with coverage report
-make test-cov
-
-# Run specific test file
-pytest tests/unit/test_fft_engine.py -v
+### Q: First launch is slow?
+```
+Streamlit starts in 5-10 seconds first time
+Subsequent launches are faster (cached)
+This is normal! ⏳
 ```
 
-### Code Quality
-
+### Q: How do I analyze my own data?
 ```bash
-# Lint code
-make lint
-
-# Format code (black + ruff auto-fix)
-make format
-
-# Type checking
-poetry run mypy src/fft_analyzer
+1. Click "📁 Import File" tab
+2. Upload CSV, WAV, or NPY file
+3. Specify sampling frequency
+4. Click ANALYZE
+Done! 🎉
 ```
 
-### Performance Benchmarks
+### Q: What's the recommended sampling rate?
+```
+Nyquist Theorem: fs > 2 × max_frequency
+Common values:
+  - 44.1 kHz (Audio)
+  - 48 kHz (Professional audio)
+  - 1 kHz (Industrial signals)
+  - 100 Hz (Vibration)
+```
 
-```bash
-make benchmark
+### Q: How accurate is peak detection?
+```
+Depends on:
+✅ Window function (Hann is default, best for most)
+✅ Zero-padding (enabled by default)
+✅ Signal SNR (higher SNR = more accurate)
+✅ Peak prominence threshold
+```
+
+### Q: Can I export to other formats?
+```
+Current: ✅ Excel, CSV
+Future: PDF, PNG images (coming soon)
 ```
 
 ## Documentation
@@ -275,134 +397,204 @@ Exporter.export_all(
 )
 ```
 
-## Configuration
+---
 
-Edit `config/config.yaml` to customize default parameters:
+## ⚙️ Configuration
+
+Edit `config/config.yaml` to customize:
 
 ```yaml
 signal:
-  sampling_rate: 1000
-  duration: 1.0
+  sampling_rate: 1000      # Hz
+  duration: 1.0            # Seconds
   components:
-    - frequency: 50
+    - frequency: 50        # Hz
       amplitude: 1.0
-      phase: 0.0
-  noise:
-    enabled: true
-    snr_db: 20
-
+      
 fft:
-  window: "hann"
-  zero_padding: true
+  window: "hann"           # Window function
+  zero_padding: true       # Improves resolution
 
 filter:
+  enabled: false
   type: "lowpass"
   cutoff_hz: 200
   order: 4
 
 peaks:
-  prominence_factor: 0.1
-  min_distance_hz: 5
+  prominence_factor: 0.1   # Sensitivity
+  min_distance_hz: 5       # Minimum separation
 ```
-
-## Technical Details
-
-### FFT Algorithm
-- **Method**: Cooley-Tukey Radix-2 DIT FFT via NumPy
-- **Windowing**: Hann, Hamming, Blackman, Rectangle
-- **Zero-Padding**: Automatic to next power of 2
-- **Spectrum**: One-sided, normalized by FFT length
-
-### Filtering
-- **Algorithm**: Butterworth IIR (via SciPy)
-- **Zero-Phase**: sosfiltfilt for symmetry
-- **Types**: Low-Pass, High-Pass, Band-Pass, Notch
-
-### Peak Detection
-- **Algorithm**: scipy.signal.find_peaks()
-- **Criteria**: Height threshold + prominence
-- **Output**: Frequency, magnitude (linear + dB), prominence
-
-## Troubleshooting
-
-### Issue: Dash app won't start
-**Solution**: Ensure ports 8050 is not in use, or specify a different port:
-```bash
-fft-analyzer dashboard --port 8051
-```
-
-### Issue: ImportError for scipy/plotly
-**Solution**: Reinstall dependencies:
-```bash
-make install-dev
-```
-
-### Issue: FFT results don't look right
-**Check**: 
-- Sample rate is correct (Nyquist = fs/2)
-- Signal has enough samples (≥ 4)
-- Window function is appropriate for your signal
-
-## Performance
-
-Typical performance on modern hardware:
-- 1,024 point FFT: < 1 ms
-- 65,536 point FFT: < 10 ms
-- 1,048,576 point FFT: < 500 ms
-- 10,000,000 point FFT: < 5 seconds
-
-## Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/awesome-feature`)
-3. Commit your changes (`git commit -m 'Add awesome feature'`)
-4. Push to branch (`git push origin feature/awesome-feature`)
-5. Open a Pull Request
-
-## Testing
-
-All changes must pass:
-```bash
-make test && make lint
-```
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Author
-
-**Your Name** - [GitHub Profile](https://github.com/yourusername)
-
-## Acknowledgments
-
-- NumPy/SciPy for core DSP algorithms
-- Plotly for interactive visualizations
-- Dash for web framework
-- All contributors and testers
-
-## Citation
-
-If you use this project in research, please cite:
-
-```bibtex
-@software{fft_analyzer_2026,
-  title={FFT Signal Analyzer: Fast Fourier Transform-based Signal Analysis Tool},
-  author={Your Name},
-  year={2026},
-  url={https://github.com/yourusername/fft-signal-analyzer}
-}
-```
-
-## Support
-
-For issues, questions, or suggestions:
-- 📝 Open an issue on GitHub
-- 💬 Discussions/Q&A on GitHub
-- 📧 Email: shlok.thorat.cyb@ghrcem.raisoni.net
 
 ---
 
-**Made with Shlok for signal processing enthusiasts**
+## 🔬 Technical Details
+
+### FFT Algorithm
+```
+Method:      Cooley-Tukey Radix-2 FFT (via NumPy)
+Precision:   64-bit floating point
+Windows:     Hann, Hamming, Blackman, Kaiser, Rectangle
+Zero-pad:    Automatic to next power of 2
+Spectrum:    One-sided, normalized
+```
+
+### Digital Filtering
+```
+Algorithm:   Butterworth IIR (SciPy)
+Order:       Default 4th order
+Zero-phase:  sosfiltfilt (symmetric)
+Types:       LP, HP, BP, Notch
+```
+
+### Peak Detection
+```
+Algorithm:   scipy.signal.find_peaks()
+Metrics:     Height, Prominence, Distance
+Output:      Frequency, Magnitude, Prominence
+```
+
+### AI Algorithms
+```
+Compression:         Frequency selection with energy threshold
+Anomaly Detection:   Isolation Forest (scikit-learn)
+Classification:      Neural Network (TensorFlow/Keras)
+```
+
+---
+
+## 📊 Performance Metrics
+
+**Typical Processing Time (Modern Hardware):**
+
+| FFT Size | Time | Comment |
+|----------|------|---------|
+| 1,024 | <1 ms | Instant |
+| 65,536 | <10 ms | Very fast |
+| 1,048,576 | <500 ms | Fast |
+| 10,000,000 | <5 sec | Acceptable |
+
+**Memory Usage:**
+```
+Signal size: 1M points     ≈ 8 MB
+FFT result:  512K freqs    ≈ 4 MB
+Total:                     ≈ 20 MB (with overhead)
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how to help:
+
+### 1. **Report Issues**
+- Found a bug? Open an Issue with:
+  - Clear description
+  - Steps to reproduce
+  - Screenshot/error message
+
+### 2. **Suggest Features**
+- Have an idea? Open an Issue (prefix with `[FEATURE]`)
+- Describe the use case
+- Explain the benefits
+
+### 3. **Submit Code**
+```bash
+1. Fork the repository
+2. Create feature branch: git checkout -b feature/awesome-feature
+3. Commit changes: git commit -m "Add awesome feature"
+4. Push to branch: git push origin feature/awesome-feature
+5. Open Pull Request
+```
+
+### 4. **Run Tests Before Submitting**
+```bash
+# Ensure code quality
+pytest tests/
+```
+
+---
+
+## 📜 License
+
+**MIT License** - See [LICENSE](LICENSE) file
+
+You are free to:
+- ✅ Use commercially
+- ✅ Modify source
+- ✅ Distribute
+- ✅ Private use
+
+---
+
+## 👤 Author
+
+**Shlok Thorat**
+- 📧 Email: shlok.thorat.cyb@ghrcem.raisoni.net
+- 🐙 GitHub: [@shlok926](https://github.com/shlok926)
+- 💼 LinkedIn: [shlok-thorat](https://linkedin.com)
+
+---
+
+## 📚 References
+
+### Learning Resources
+- [FFT Theory](https://en.wikipedia.org/wiki/Fast_Fourier_transform)
+- [SciPy DSP](https://docs.scipy.org/doc/scipy/reference/signal.html)
+- [NumPy FFT](https://numpy.org/doc/stable/reference/fft.html)
+
+### Related Tools
+- [Audacity](https://www.audacityteam.org/) - Audio editing
+- [GNU Octave](https://www.gnu.org/software/octave/) - MATLAB alternative
+- [MATLAB](https://www.mathworks.com/) - Professional DSP
+
+---
+
+## 🎓 Academic Citation
+
+If you use this tool in research, please cite:
+
+```bibtex
+@software{fft_analyzer_2026,
+  title={FFT Signal Analyzer: Real-Time Signal Processing \& Analysis},
+  author={Thorat, Shlok},
+  year={2026},
+  url={https://github.com/shlok926/fft-signal-analyzer}
+}
+```
+
+---
+
+## 🙏 Acknowledgments
+
+Built with:
+- 🙏 NumPy/SciPy/Pandas (DSP algorithms)
+- 🙏 Streamlit (Web framework)
+- 🙏 Plotly (Interactive plots)
+- 🙏 Scikit-learn (ML algorithms)
+- 🙏 All open-source contributors
+
+---
+
+## 📞 Support & Feedback
+
+### Get Help
+- 📖 [Documentation](QUICKSTART.md)
+- 🐙 [GitHub Issues](https://github.com/shlok926/fft-signal-analyzer/issues)
+- 💬 [Discussions](https://github.com/shlok926/fft-signal-analyzer/discussions)
+
+### Share Feedback
+- ⭐ Star the repository if you find it useful
+- 🐛 Report bugs
+- 💡 Suggest improvements
+- 📢 Spread the word!
+
+---
+
+<div align="center">
+
+### Made with ❤️  for signal processing enthusiasts
+
+**[⬆ back to top](#-fft-signal-analyzer)**
+
+</div>
