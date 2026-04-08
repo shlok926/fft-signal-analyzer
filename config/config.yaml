@@ -1,0 +1,44 @@
+signal:
+  sampling_rate: 1000                       # Hz
+  duration: 1.0                             # seconds
+  components:
+    - frequency: 50
+      amplitude: 1.0
+      phase: 0.0
+    - frequency: 120
+      amplitude: 0.5
+      phase: 0.0
+  noise:
+    enabled: true
+    snr_db: 20
+
+fft:
+  window: "hann"                            # hann | hamming | blackman | rectangle
+  zero_padding: true
+  one_sided: true
+
+filter:
+  type: "lowpass"                           # lowpass | highpass | bandpass | notch
+  cutoff_hz: 200
+  order: 4
+
+peaks:
+  prominence_factor: 0.1                    # fraction of max magnitude
+  min_distance_hz: 5
+  height_threshold: 0.05                    # fraction of max magnitude
+
+export:
+  output_dir: "./outputs"
+  formats:
+    - "png"
+    - "csv"
+    - "pdf"
+
+ui:
+  debug: false
+  host: "127.0.0.1"
+  port: 8050
+
+logging:
+  level: "INFO"                             # DEBUG | INFO | WARNING | ERROR | CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

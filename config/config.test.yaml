@@ -1,0 +1,42 @@
+signal:
+  sampling_rate: 1000
+  duration: 0.5
+  components:
+    - frequency: 50
+      amplitude: 1.0
+      phase: 0.0
+    - frequency: 150
+      amplitude: 0.3
+      phase: 0.0
+  noise:
+    enabled: true
+    snr_db: 30
+
+fft:
+  window: "hann"
+  zero_padding: true
+  one_sided: true
+
+filter:
+  type: "none"
+  cutoff_hz: 200
+  order: 4
+
+peaks:
+  prominence_factor: 0.15
+  min_distance_hz: 10
+  height_threshold: 0.1
+
+export:
+  output_dir: "./outputs_test"
+  formats:
+    - "csv"
+
+ui:
+  debug: false
+  host: "127.0.0.1"
+  port: 8051
+
+logging:
+  level: "WARNING"
+  format: "%(levelname)s - %(message)s"
