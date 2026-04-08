@@ -1,5 +1,45 @@
 # 🚀 FFT Spectrum Analyzer - Desktop Launcher Guide
 
+## 👥 Who Should Use This?
+
+**Perfect For:**
+- 🔬 **Engineers & Scientists** - Signal processing, FFT analysis, frequency domain research
+- 📊 **Data Analysts** - Time-series analysis, pattern detection, anomaly identification
+- 🎵 **Audio Engineers** - Audio signal analysis, frequency spectrum visualization
+- 📡 **Telecommunications** - Signal quality analysis, frequency monitoring
+- 🤖 **ML Researchers** - Signal classification, compression, feature extraction
+- 👨‍🎓 **Students** - Learning signal processing, FFT, digital filters
+- 💼 **Professionals** - Quality control, diagnostics, equipment monitoring
+
+**Features Suitable For:**
+| Use Case | Feature |
+|----------|---------|
+| Audio Analysis | Frequency spectrum, spectrogram |
+| Vibration Detection | Peak detection, anomaly detection |
+| Signal Compression | Data compression with energy preservation |
+| Quality Assurance | Statistical analysis, classification |
+| Research | Multiple export formats, AI-powered analysis |
+
+**Capability Matrix:**
+
+```
+                    Audio  Mech  Data   Research QC   Students
+Signal Import       ✅    ✅    ✅     ✅       ✅    ✅
+FFT Analysis        ✅    ✅    ✅     ✅       ✅    ✅
+Peak Detection      ✅    ✅    ✅     ✅       ✅    ✅
+Digital Filters     ✅    ✅    ✅     ✅       ✅    ✅
+Spectrogram         ✅    ✅    ✅     ✅       ✅    ✅
+Compression         ⭐    ⭐    ✅     ✅       ✅    ✅
+Anomaly Detection   ⭐    ✅    ✅     ✅       ✅    ⭐
+Classification      ⭐    ✅    ✅     ✅       ✅    ⭐
+Statistics          ✅    ✅    ✅     ✅       ✅    ✅
+Excel Export        ✅    ✅    ✅     ✅       ✅    ✅
+
+Legend: ✅ = Useful   ⭐ = Highly Recommended
+```
+
+---
+
 ## Quick Start
 
 ### Option 1: Desktop Shortcut (Easiest)
@@ -47,8 +87,11 @@ streamlit run streamlit_app.py
 ### AI Features
 After analysis, use:
 - **🗜️ Data Compression** - Compress spectrum while keeping key data
+  - *For:* Data storage, bandwidth optimization, research
 - **🚨 Anomaly Detection** - Find unusual frequencies
+  - *For:* Equipment monitoring, quality control, fault detection
 - **🧠 Signal Classification** - Identify signal type
+  - *For:* Automatic signal categorization, pattern recognition
 
 ## Features
 
@@ -105,6 +148,44 @@ After analysis, use:
 
 Code and updates available at:
 https://github.com/shlok926/fft-signal-analyzer
+
+## 🎯 User Personas & Use Cases
+
+### 1. **Audio Engineers**
+- ✅ Import audio files (.wav)
+- ✅ Analyze frequency content
+- ✅ Detect audio artifacts and anomalies
+- ✅ Export spectrum analysis
+
+### 2. **Mechanical Engineers**
+- ✅ Vibration analysis from sensors
+- ✅ Bearing fault detection (anomaly detection)
+- ✅ Equipment health monitoring
+- ✅ Identify mechanical resonances
+
+### 3. **Data Scientists**
+- ✅ Feature extraction from signals
+- ✅ Data compression for ML pipelines
+- ✅ Time-series analysis
+- ✅ Signal classification models
+
+### 4. **Researchers & Academics**
+- ✅ Signal processing experiments
+- ✅ FFT algorithm testing
+- ✅ Filter design and validation
+- ✅ Publication-ready plots and data
+
+### 5. **Quality Control Specialists**
+- ✅ Equipment testing and validation
+- ✅ Anomaly detection in production
+- ✅ Statistical signatures
+- ✅ Excel export for reporting
+
+### 6. **Students & Learners**
+- ✅ Learn FFT and signal processing
+- ✅ Interactive visualization
+- ✅ Multiple filter types to experiment
+- ✅ Real-time feedback
 
 ## Support
 
