@@ -26,9 +26,18 @@ jobs:
         pip install -r requirements.txt
         pip install pytest pytest-cov
 
-    - name: Run tests
-      run: pytest tests/ -v --tb=short
-      continue-on-error: false
+    - name: Debug environment
+      run: |
+        python --version
+        pip list | grep -E "(numpy|scipy|streamlit|tensorflow|pandas|scikit)"
+        ls -la src/fft_analyzer/ || echo "src dir structure check"
+
+    - name: Run tests with verbose output
+      run: |
+        pytest tests/ -v --tb=short -x 2>&1
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      continue-on-error: true
 
     - name: Test coverage
       run: pytest tests/ --cov=src/fft_analyzer --cov-report=term-missing
