@@ -11,7 +11,6 @@
 <br/>
 
   <a href="./QUICKSTART.md"><img src="./docs/assets/buttons/quickstart.svg" alt="Quick Start" height="38"></a>
-  <a href="./DESKTOP_LAUNCHER_GUIDE.md"><img src="./docs/assets/buttons/desktop_guide.svg" alt="Desktop App Guide" height="38"></a>
   <a href="#🚀-quick-start-choose-your-format"><img src="./docs/assets/buttons/run_locally.svg" alt="Run Locally" height="38"></a>
 
 <br/>
@@ -32,7 +31,6 @@
 | :--- | :--- | :--- | :--- |
 | 🛠️ **1. The Tool (CLI/Lib)** | Developers, Researchers & Engineers | Python 3.11+ environment must be installed | • CLI: `python -m src.fft_analyzer.cli.main --help`<br>• Lib: Import core modules in your Python scripts |
 | 🌐 **2. The Web App (Cloud)** | Public, Educators, Students & Mobile Users | Zero installation (web browser only) | • Open the public browser URL<br>• Fully responsive on desktop & mobile |
-| 💻 **3. The Desktop App (.exe)** | General / Offline Desktop Users | No Python needed (portable executable) | • Download `FFT_Spectrum_Analyzer.exe` from Releases<br>• Double-click to launch offline instantly |
 
 ---
 
