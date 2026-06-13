@@ -8,6 +8,12 @@ import PyInstaller.__main__
 import sys
 import os
 
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 # Define build parameters
 APP_NAME = "FFT_Spectrum_Analyzer"
 MAIN_SCRIPT = "streamlit_app.py"

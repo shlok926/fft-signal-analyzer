@@ -11,6 +11,11 @@ from pathlib import Path
 
 def build_exe():
     """Build the executable"""
+    if sys.platform.startswith('win'):
+        try:
+            sys.stdout.reconfigure(encoding='utf-8')
+        except Exception:
+            pass
     
     print("\n" + "="*60)
     print("🔨 FFT Spectrum Analyzer - Desktop Build")

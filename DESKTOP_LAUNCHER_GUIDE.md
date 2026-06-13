@@ -1,24 +1,43 @@
 # 🚀 FFT Spectrum Analyzer - Desktop Launcher Guide
 
-## Quick Start (3 Methods)
+<div align="center">
+  <a href="./README.md"><img src="./docs/assets/buttons/readme.svg" alt="Main README" height="38"></a>
+  <a href="./QUICKSTART.md"><img src="./docs/assets/buttons/quickstart.svg" alt="Quick Start" height="38"></a>
+  <a href="https://github.com/shlok926/fft-signal-analyzer"><img src="./docs/assets/buttons/source_code.svg" alt="GitHub Repository" height="38"></a>
+</div>
 
-### 1️⃣ **Desktop Shortcut** (Easiest)
-- Look on your Desktop for: **"FFT Spectrum Analyzer.lnk"**
-- Double-click to launch
-- Browser opens automatically at `http://localhost:8501`
+<br/>
 
-### 2️⃣ **Batch File Launcher**
-```bash
-Double-click: FFT_Spectrum_Analyzer.bat
-```
-- Auto-checks dependencies
-- Starts Streamlit server
-- Opens browser
+## Quick Start Options
 
-### 3️⃣ **Command Line**
-```bash
-cd c:\Users\Shlok\fft_signal_analyzer
-streamlit run streamlit_app.py
+Depending on your setup, you can launch the desktop application in one of two ways:
+
+---
+
+### 💻 Option A: Standalone Executable (`.exe`) — No Python Required
+*Designed for general or offline users who want to run the application with zero installation.*
+
+1. Download the compiled executable `FFT_Spectrum_Analyzer.exe` from the GitHub Releases page.
+2. Double-click the file to launch it!
+3. The self-contained server will boot in the background and open the application in your default web browser automatically.
+
+---
+
+### 🐍 Option B: Python-Based Launchers (Shortcut / Batch File)
+*Designed for users who already have Python installed and want to run the app from source.*
+
+#### 1️⃣ **Desktop Shortcut** (Easiest Python launch)
+- Double-click the **"FFT Spectrum Analyzer"** shortcut on your Desktop (created via `create_shortcut.ps1`).
+- The application will launch and open your browser automatically.
+
+#### 2️⃣ **Batch File Launcher**
+- Double-click the file named **`FFT_Spectrum_Analyzer.bat`** in the project directory.
+- It will verify your Python environment, auto-install missing libraries, start the Streamlit server, and open your browser.
+
+#### 3️⃣ **Direct Command Line**
+```powershell
+cd d:\Desktop\fft_signal_analyzer
+python -m streamlit run streamlit_app.py
 ```
 
 ---
