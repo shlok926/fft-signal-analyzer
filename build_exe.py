@@ -21,20 +21,20 @@ def build_exe():
     print("🔨 FFT Spectrum Analyzer - Desktop Build")
     print("="*60)
     
-    # Paths
     project_root = Path(__file__).parent
-    app_file = project_root / "streamlit_app.py"
+    app_file = project_root / "run_app.py"
+    streamlit_app = project_root / "streamlit_app.py"
     dist_folder = project_root / "dist"
     build_folder = project_root / "build"
     spec_file = project_root / "FFT_Spectrum_Analyzer.spec"
     
-    # Check if streamlit_app.py exists
-    if not app_file.exists():
-        print(f"❌ Error: {app_file} not found!")
+    # Check if files exist
+    if not app_file.exists() or not streamlit_app.exists():
+        print(f"❌ Error: Required files (run_app.py or streamlit_app.py) not found!")
         sys.exit(1)
     
     print(f"\n📁 Project root: {project_root}")
-    print(f"📄 App file: {app_file}")
+    print(f"📄 App entry point: {app_file}")
     
     # Remove old build artifacts
     print("\n🧹 Cleaning old build artifacts...")
@@ -59,6 +59,7 @@ def build_exe():
         "--icon=ICON.ico" if (project_root / "ICON.ico").exists() else "",
         "--add-data=src:src",
         "--add-data=config:config",
+        f"--add-data=streamlit_app.py{os.pathsep}.",
         "--hidden-import=streamlit",
         "--hidden-import=plotly",
         "--hidden-import=pandas",

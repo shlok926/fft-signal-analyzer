@@ -16,7 +16,7 @@ if sys.platform.startswith('win'):
 
 # Define build parameters
 APP_NAME = "FFT_Spectrum_Analyzer"
-MAIN_SCRIPT = "streamlit_app.py"
+MAIN_SCRIPT = "run_app.py"
 OUTPUT_DIR = "dist"
 BUILD_DIR = "build"
 
@@ -31,6 +31,7 @@ args = [
     "--icon=ICON.ico" if os.path.exists("ICON.ico") else "",
     "--add-data=src:src",
     "--add-data=config:config",
+    f"--add-data=streamlit_app.py{os.pathsep}.",
     "--add-data=.streamlit:.streamlit",
     "--hidden-import=streamlit",
     "--hidden-import=plotly",
