@@ -5,7 +5,7 @@
 ### 🔬 Real-Time Signal Processing & Frequency Domain Analysis
 
   <a href="https://github.com/shlok926/fft-signal-analyzer/releases/latest"><img src="https://img.shields.io/badge/Download-Windows%20App%20(.exe)-blue?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows .exe" height="40"></a>
-  <a href="https://fft-analyzer.streamlit.app"><img src="https://img.shields.io/badge/Live-Cloud%20Web%20App-green?style=for-the-badge&logo=streamlit" alt="Live Cloud Web App" height="40"></a>
+  <a href="https://fft-signal-analyzer.streamlit.app"><img src="https://img.shields.io/badge/Live-Cloud%20Web%20App-green?style=for-the-badge&logo=streamlit" alt="Live Cloud Web App" height="40"></a>
   <a href="https://github.com/shlok926/fft-signal-analyzer"><img src="https://img.shields.io/badge/Source-GitHub-black?style=for-the-badge&logo=github" alt="Source Code" height="40"></a>
 
 <br/>
